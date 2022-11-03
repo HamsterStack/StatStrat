@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		811F49FA2896D3D300B6F895 /* FirestoreHypixelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F49F92896D3D300B6F895 /* FirestoreHypixelApp.swift */; };
+		811F49FC2896D3D300B6F895 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F49FB2896D3D300B6F895 /* ContentView.swift */; };
+		811F49FE2896D3D300B6F895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811F49FD2896D3D300B6F895 /* Assets.xcassets */; };
+		811F4A012896D3D300B6F895 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811F4A002896D3D300B6F895 /* Preview Assets.xcassets */; };
+		811F4A082896D3F600B6F895 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 811F4A072896D3F600B6F895 /* GoogleService-Info.plist */; };
+		811F4A0B2896D45600B6F895 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 811F4A0A2896D45600B6F895 /* FirebaseFirestore */; };
+		811F4A0D2896D45600B6F895 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 811F4A0C2896D45600B6F895 /* FirebaseFirestoreSwift */; };
+		811F4A0F2896D45600B6F895 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 811F4A0E2896D45600B6F895 /* FirebaseStorage */; };
+		811F4A112896D5F400B6F895 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F4A102896D5F400B6F895 /* Player.swift */; };
+		811F4A132896D62300B6F895 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F4A122896D62300B6F895 /* PlayerViewModel.swift */; };
+		811F4A152896D65800B6F895 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811F4A142896D65800B6F895 /* PlayerService.swift */; };
+		8121C5F2289D34960047A806 /* DailyStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121C5F1289D34960047A806 /* DailyStatsView.swift */; };
+		8121C5F4289D5FC40047A806 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8121C5F3289D5FC40047A806 /* InfoView.swift */; };
+		812FE43328A2B0620059B9F5 /* SkywarsStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FE43228A2B0620059B9F5 /* SkywarsStatsView.swift */; };
+		812FE43528A2B96B0059B9F5 /* DailyTNTRunStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FE43428A2B96B0059B9F5 /* DailyTNTRunStatsView.swift */; };
+		812FE43728A2BD790059B9F5 /* DailySkywarsStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FE43628A2BD790059B9F5 /* DailySkywarsStatsView.swift */; };
+		812FE43928A2C53B0059B9F5 /* DailyDuelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FE43828A2C53B0059B9F5 /* DailyDuelsView.swift */; };
+		812FE43D28A2EBB70059B9F5 /* DuelStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812FE43C28A2EBB70059B9F5 /* DuelStatsView.swift */; };
+		81484A1F28982B7F00E06483 /* DatabaseExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81484A1E28982B7F00E06483 /* DatabaseExtensions.swift */; };
+		814F11A928A952890037EC2D /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814F11A828A952890037EC2D /* ShopView.swift */; };
+		815C4B2E289EBAF3003FE9ED /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815C4B2D289EBAF3003FE9ED /* SlideView.swift */; };
+		8174A0B028A073A100043977 /* BedwarsStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8174A0AF28A073A100043977 /* BedwarsStatsView.swift */; };
+		818D0C8B28A0100900B0C6C7 /* SavedPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D0C8A28A0100900B0C6C7 /* SavedPlayer.swift */; };
+		818D0C8D28A0157700B0C6C7 /* UserDefaultExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 818D0C8C28A0157700B0C6C7 /* UserDefaultExtensions.swift */; };
+		81D9C8EF289BF8BB003F1281 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9C8EE289BF8BB003F1281 /* LoginView.swift */; };
+		81D9C8F1289BF8DE003F1281 /* TabNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9C8F0289BF8DE003F1281 /* TabNavigationView.swift */; };
+		81D9C8F3289BF8FB003F1281 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9C8F2289BF8FB003F1281 /* LoadingView.swift */; };
+		81D9C8F5289BFCA8003F1281 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9C8F4289BFCA8003F1281 /* ProfileView.swift */; };
+		81D9C8F7289BFCD9003F1281 /* TwoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9C8F6289BFCD9003F1281 /* TwoTextView.swift */; };
+		81D9C8F9289BFCF5003F1281 /* RankTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9C8F8289BFCF5003F1281 /* RankTextView.swift */; };
+		81D9C8FB289BFD0F003F1281 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9C8FA289BFD0F003F1281 /* ColorExtensions.swift */; };
+		81D9C8FD289BFD2C003F1281 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9C8FC289BFD2C003F1281 /* ViewModifiers.swift */; };
+		81D9C8FF289BFE13003F1281 /* DailyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D9C8FE289BFE13003F1281 /* DailyView.swift */; };
+		81F1F67028A6A5D5003944C3 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F1F66F28A6A5D5003944C3 /* IntExtension.swift */; };
+		81F1F67B28A6C563003944C3 /* InfoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F1F67A28A6C563003944C3 /* InfoDetailView.swift */; };
+		81F1F67D28A6C5A4003944C3 /* InfoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F1F67C28A6C5A4003944C3 /* InfoContainerView.swift */; };
+		81F1F67F28A6C728003944C3 /* DailyHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F1F67E28A6C728003944C3 /* DailyHelpView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		811F49F62896D3D300B6F895 /* FirestoreHypixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirestoreHypixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		811F49F92896D3D300B6F895 /* FirestoreHypixelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreHypixelApp.swift; sourceTree = "<group>"; };
+		811F49FB2896D3D300B6F895 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		811F49FD2896D3D300B6F895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		811F4A002896D3D300B6F895 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		811F4A072896D3F600B6F895 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		811F4A102896D5F400B6F895 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		811F4A122896D62300B6F895 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		811F4A142896D65800B6F895 /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		8121C5F1289D34960047A806 /* DailyStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStatsView.swift; sourceTree = "<group>"; };
+		8121C5F3289D5FC40047A806 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		812FE43228A2B0620059B9F5 /* SkywarsStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkywarsStatsView.swift; sourceTree = "<group>"; };
+		812FE43428A2B96B0059B9F5 /* DailyTNTRunStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTNTRunStatsView.swift; sourceTree = "<group>"; };
+		812FE43628A2BD790059B9F5 /* DailySkywarsStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySkywarsStatsView.swift; sourceTree = "<group>"; };
+		812FE43828A2C53B0059B9F5 /* DailyDuelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDuelsView.swift; sourceTree = "<group>"; };
+		812FE43C28A2EBB70059B9F5 /* DuelStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuelStatsView.swift; sourceTree = "<group>"; };
+		81484A1E28982B7F00E06483 /* DatabaseExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseExtensions.swift; sourceTree = "<group>"; };
+		814F11A828A952890037EC2D /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		815C4B2D289EBAF3003FE9ED /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
+		8174A0AF28A073A100043977 /* BedwarsStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedwarsStatsView.swift; sourceTree = "<group>"; };
+		818D0C8A28A0100900B0C6C7 /* SavedPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPlayer.swift; sourceTree = "<group>"; };
+		818D0C8C28A0157700B0C6C7 /* UserDefaultExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultExtensions.swift; sourceTree = "<group>"; };
+		81D9C8EE289BF8BB003F1281 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		81D9C8F0289BF8DE003F1281 /* TabNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationView.swift; sourceTree = "<group>"; };
+		81D9C8F2289BF8FB003F1281 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		81D9C8F4289BFCA8003F1281 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		81D9C8F6289BFCD9003F1281 /* TwoTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoTextView.swift; sourceTree = "<group>"; };
+		81D9C8F8289BFCF5003F1281 /* RankTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTextView.swift; sourceTree = "<group>"; };
+		81D9C8FA289BFD0F003F1281 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		81D9C8FC289BFD2C003F1281 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		81D9C8FE289BFE13003F1281 /* DailyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyView.swift; sourceTree = "<group>"; };
+		81F1F66F28A6A5D5003944C3 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		81F1F67A28A6C563003944C3 /* InfoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailView.swift; sourceTree = "<group>"; };
+		81F1F67C28A6C5A4003944C3 /* InfoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoContainerView.swift; sourceTree = "<group>"; };
+		81F1F67E28A6C728003944C3 /* DailyHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHelpView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		811F49F32896D3D300B6F895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811F4A0B2896D45600B6F895 /* FirebaseFirestore in Frameworks */,
+				811F4A0D2896D45600B6F895 /* FirebaseFirestoreSwift in Frameworks */,
+				811F4A0F2896D45600B6F895 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		811F49ED2896D3D300B6F895 = {
+			isa = PBXGroup;
+			children = (
+				811F49F82896D3D300B6F895 /* FirestoreHypixel */,
+				811F49F72896D3D300B6F895 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		811F49F72896D3D300B6F895 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				811F49F62896D3D300B6F895 /* FirestoreHypixel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		811F49F82896D3D300B6F895 /* FirestoreHypixel */ = {
+			isa = PBXGroup;
+			children = (
+				811F49F92896D3D300B6F895 /* FirestoreHypixelApp.swift */,
+				811F49FB2896D3D300B6F895 /* ContentView.swift */,
+				81F1F67928A6C533003944C3 /* DailyHelp */,
+				81F7C90D289C489400076A00 /* PlayerService */,
+				81F7C90C289C488D00076A00 /* Views */,
+				81F7C90B289C487B00076A00 /* Models */,
+				81F7C90A289C487100076A00 /* ViewModels */,
+				81F7C909289C485500076A00 /* Extensions */,
+				811F4A072896D3F600B6F895 /* GoogleService-Info.plist */,
+				811F49FD2896D3D300B6F895 /* Assets.xcassets */,
+				811F49FF2896D3D300B6F895 /* Preview Content */,
+			);
+			path = FirestoreHypixel;
+			sourceTree = "<group>";
+		};
+		811F49FF2896D3D300B6F895 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				811F4A002896D3D300B6F895 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81F1F67928A6C533003944C3 /* DailyHelp */ = {
+			isa = PBXGroup;
+			children = (
+				81F1F67A28A6C563003944C3 /* InfoDetailView.swift */,
+				81F1F67C28A6C5A4003944C3 /* InfoContainerView.swift */,
+				81F1F67E28A6C728003944C3 /* DailyHelpView.swift */,
+			);
+			path = DailyHelp;
+			sourceTree = "<group>";
+		};
+		81F7C909289C485500076A00 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				81484A1E28982B7F00E06483 /* DatabaseExtensions.swift */,
+				81F1F66F28A6A5D5003944C3 /* IntExtension.swift */,
+				81D9C8FA289BFD0F003F1281 /* ColorExtensions.swift */,
+				81D9C8FC289BFD2C003F1281 /* ViewModifiers.swift */,
+				818D0C8C28A0157700B0C6C7 /* UserDefaultExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81F7C90A289C487100076A00 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				811F4A122896D62300B6F895 /* PlayerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		81F7C90B289C487B00076A00 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				811F4A102896D5F400B6F895 /* Player.swift */,
+				818D0C8A28A0100900B0C6C7 /* SavedPlayer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		81F7C90C289C488D00076A00 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				812FE43828A2C53B0059B9F5 /* DailyDuelsView.swift */,
+				812FE43628A2BD790059B9F5 /* DailySkywarsStatsView.swift */,
+				812FE43428A2B96B0059B9F5 /* DailyTNTRunStatsView.swift */,
+				8121C5F1289D34960047A806 /* DailyStatsView.swift */,
+				81D9C8EE289BF8BB003F1281 /* LoginView.swift */,
+				8121C5F3289D5FC40047A806 /* InfoView.swift */,
+				81D9C8F4289BFCA8003F1281 /* ProfileView.swift */,
+				812FE43C28A2EBB70059B9F5 /* DuelStatsView.swift */,
+				814F11A828A952890037EC2D /* ShopView.swift */,
+				812FE43228A2B0620059B9F5 /* SkywarsStatsView.swift */,
+				8174A0AF28A073A100043977 /* BedwarsStatsView.swift */,
+				81D9C8FE289BFE13003F1281 /* DailyView.swift */,
+				81D9C8F6289BFCD9003F1281 /* TwoTextView.swift */,
+				81D9C8F8289BFCF5003F1281 /* RankTextView.swift */,
+				81D9C8F2289BF8FB003F1281 /* LoadingView.swift */,
+				81D9C8F0289BF8DE003F1281 /* TabNavigationView.swift */,
+				815C4B2D289EBAF3003FE9ED /* SlideView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81F7C90D289C489400076A00 /* PlayerService */ = {
+			isa = PBXGroup;
+			children = (
+				811F4A142896D65800B6F895 /* PlayerService.swift */,
+			);
+			path = PlayerService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		811F49F52896D3D300B6F895 /* FirestoreHypixel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 811F4A042896D3D300B6F895 /* Build configuration list for PBXNativeTarget "FirestoreHypixel" */;
+			buildPhases = (
+				811F49F22896D3D300B6F895 /* Sources */,
+				811F49F32896D3D300B6F895 /* Frameworks */,
+				811F49F42896D3D300B6F895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirestoreHypixel;
+			packageProductDependencies = (
+				811F4A0A2896D45600B6F895 /* FirebaseFirestore */,
+				811F4A0C2896D45600B6F895 /* FirebaseFirestoreSwift */,
+				811F4A0E2896D45600B6F895 /* FirebaseStorage */,
+			);
+			productName = FirestoreHypixel;
+			productReference = 811F49F62896D3D300B6F895 /* FirestoreHypixel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		811F49EE2896D3D300B6F895 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					811F49F52896D3D300B6F895 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 811F49F12896D3D300B6F895 /* Build configuration list for PBXProject "FirestoreHypixel" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 811F49ED2896D3D300B6F895;
+			packageReferences = (
+				811F4A092896D45600B6F895 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 811F49F72896D3D300B6F895 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				811F49F52896D3D300B6F895 /* FirestoreHypixel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		811F49F42896D3D300B6F895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				811F4A012896D3D300B6F895 /* Preview Assets.xcassets in Resources */,
+				811F4A082896D3F600B6F895 /* GoogleService-Info.plist in Resources */,
+				811F49FE2896D3D300B6F895 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		811F49F22896D3D300B6F895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D9C8FD289BFD2C003F1281 /* ViewModifiers.swift in Sources */,
+				81F1F67B28A6C563003944C3 /* InfoDetailView.swift in Sources */,
+				81D9C8EF289BF8BB003F1281 /* LoginView.swift in Sources */,
+				811F49FC2896D3D300B6F895 /* ContentView.swift in Sources */,
+				81D9C8F1289BF8DE003F1281 /* TabNavigationView.swift in Sources */,
+				812FE43928A2C53B0059B9F5 /* DailyDuelsView.swift in Sources */,
+				81F1F67028A6A5D5003944C3 /* IntExtension.swift in Sources */,
+				8121C5F4289D5FC40047A806 /* InfoView.swift in Sources */,
+				81D9C8F9289BFCF5003F1281 /* RankTextView.swift in Sources */,
+				815C4B2E289EBAF3003FE9ED /* SlideView.swift in Sources */,
+				8174A0B028A073A100043977 /* BedwarsStatsView.swift in Sources */,
+				81D9C8F3289BF8FB003F1281 /* LoadingView.swift in Sources */,
+				81484A1F28982B7F00E06483 /* DatabaseExtensions.swift in Sources */,
+				818D0C8B28A0100900B0C6C7 /* SavedPlayer.swift in Sources */,
+				812FE43D28A2EBB70059B9F5 /* DuelStatsView.swift in Sources */,
+				812FE43328A2B0620059B9F5 /* SkywarsStatsView.swift in Sources */,
+				811F4A152896D65800B6F895 /* PlayerService.swift in Sources */,
+				81D9C8FF289BFE13003F1281 /* DailyView.swift in Sources */,
+				81D9C8F7289BFCD9003F1281 /* TwoTextView.swift in Sources */,
+				811F4A132896D62300B6F895 /* PlayerViewModel.swift in Sources */,
+				812FE43528A2B96B0059B9F5 /* DailyTNTRunStatsView.swift in Sources */,
+				811F4A112896D5F400B6F895 /* Player.swift in Sources */,
+				8121C5F2289D34960047A806 /* DailyStatsView.swift in Sources */,
+				811F49FA2896D3D300B6F895 /* FirestoreHypixelApp.swift in Sources */,
+				81F1F67D28A6C5A4003944C3 /* InfoContainerView.swift in Sources */,
+				814F11A928A952890037EC2D /* ShopView.swift in Sources */,
+				81F1F67F28A6C728003944C3 /* DailyHelpView.swift in Sources */,
+				81D9C8F5289BFCA8003F1281 /* ProfileView.swift in Sources */,
+				818D0C8D28A0157700B0C6C7 /* UserDefaultExtensions.swift in Sources */,
+				81D9C8FB289BFD0F003F1281 /* ColorExtensions.swift in Sources */,
+				812FE43728A2BD790059B9F5 /* DailySkywarsStatsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		811F4A022896D3D300B6F895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		811F4A032896D3D300B6F895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		811F4A052896D3D300B6F895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FirestoreHypixel/Preview Content\"";
+				DEVELOPMENT_TEAM = W263X7CLZB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tommiller.FirestoreHypixel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		811F4A062896D3D300B6F895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FirestoreHypixel/Preview Content\"";
+				DEVELOPMENT_TEAM = W263X7CLZB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tommiller.FirestoreHypixel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		811F49F12896D3D300B6F895 /* Build configuration list for PBXProject "FirestoreHypixel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				811F4A022896D3D300B6F895 /* Debug */,
+				811F4A032896D3D300B6F895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		811F4A042896D3D300B6F895 /* Build configuration list for PBXNativeTarget "FirestoreHypixel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				811F4A052896D3D300B6F895 /* Debug */,
+				811F4A062896D3D300B6F895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		811F4A092896D45600B6F895 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		811F4A0A2896D45600B6F895 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 811F4A092896D45600B6F895 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		811F4A0C2896D45600B6F895 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 811F4A092896D45600B6F895 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		811F4A0E2896D45600B6F895 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 811F4A092896D45600B6F895 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 811F49EE2896D3D300B6F895 /* Project object */;
+}
