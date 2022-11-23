@@ -1,6 +1,6 @@
 StatStrat is an iOS app that lets you track players statistics on Hypixel. Using the Hypixel API it will display any statistics for a player of your
 choice(as long as they are a valid player) and display their statistics in a nice and easy to understand manner. This app will also track your
-daily statistics using Firebase Functions, it is going to keep track of your daily statistics and reset them every 24 hours.
+daily statistics using Firebase Cloud Functions, it is going to keep track of your daily statistics and reset them every 24 hours.
 
 <img src="https://user-images.githubusercontent.com/108938294/199853989-0c29c025-0392-4059-92a1-1b009341e92e.png" width="393" height="852">
 <img src="https://user-images.githubusercontent.com/108938294/199853995-6d0d6d12-55af-4534-a095-45932e66d3e4.png" width="393" height="852">
