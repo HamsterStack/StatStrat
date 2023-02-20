@@ -7,7 +7,8 @@
 
 import Foundation
 struct PlayerService {
-    static private var key : String = "cfa089c9-790f-4def-8b4f-32ace80a54a4"
+    static private var key : String = ProcessInfo.processInfo.
+    environment["HypixelKey]
     
     enum PlayerServiceError : Error {
         case failed
