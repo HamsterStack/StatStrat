@@ -38,7 +38,7 @@ struct DailyHelpView: View {
                             
                 
                     }
-            InfoContainerView()
+            InfoContainerView() //
             Spacer(minLength: 30)
             
             Button {
